@@ -25,7 +25,7 @@ if not api_key:
     raise ValueError("GEMINI_API_KEY environment variable not set")
 
 genai.configure(api_key=api_key)
-model = genai.GenerativeModel('gemini-1.5-pro')
+model = genai.GenerativeModel('gemini-2.5-pro')
 
 # Define request and response models
 class Message(BaseModel):
